@@ -1,0 +1,271 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #33453f;
+  color: #fcfcfc;
+  font-family: 'Dosis', sans-serif;
+}
+
+body h2 {
+  font-family: 'Dancing Script', cursive;
+}
+
+body header .sechead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .sechead .img1 {
+  border-radius: 50%;
+  width: 15vw;
+}
+
+body header .sechead .signature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2vw;
+}
+
+body header .sechead .signature h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 32px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+body header .sechead .signature h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+body header .secnav .button {
+  display: none;
+  border: 2px solid #33453f;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 10%;
+  margin: 2vw;
+}
+
+body header .secnav .button .line {
+  background-color: #33453f;
+  width: 70%;
+  height: 10%;
+}
+
+body header .secnav .navi {
+  background-color: #427a69;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2vw 5vw;
+  height: 5vw;
+}
+
+body header .secnav .navi a {
+  color: inherit;
+  text-decoration: none;
+  width: 23%;
+}
+
+body header .secnav .navi a div {
+  text-align: center;
+}
+
+body header .secnav .navi a:hover {
+  font-size: 20px;
+  text-shadow: 1px 1px 5px #000;
+  -webkit-transition: font-size 0.2s linear;
+  transition: font-size 0.2s linear;
+}
+
+body main {
+  margin-left: 13vw;
+  margin-top: 21vw;
+}
+
+body main .omnie {
+  padding: 3vw;
+}
+
+body main .hobby {
+  background-color: #182521;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  border-top: 1px solid #fff;
+  height: 50vw;
+}
+
+body main .hobby #hobby {
+  width: 87%;
+  height: 50vw;
+  position: absolute;
+  z-index: 1;
+}
+
+body main .hobby .napis {
+  position: absolute;
+  margin-left: 1vw;
+  z-index: 2;
+}
+
+body main .hobby .img2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2vw;
+  z-index: 2;
+}
+
+body main .hobby .img2 img {
+  border-radius: 50%;
+  width: 15vw;
+}
+
+body main .hobby .img2 img:hover {
+  width: 20vw;
+  position: absolute;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+}
+
+body main .hobby .img2 .opis {
+  display: none;
+  z-index: 3;
+}
+
+body main .hobby .img2 .img2:active > .opis {
+  display: block;
+  border-radius: 10%;
+  background-color: #33453f;
+}
+
+body .top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+body .top .button {
+  display: none;
+}
+
+body .left {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #427a69;
+  width: 13vw;
+}
+
+body .med {
+  background-color: #427a69;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+body footer {
+  background-color: #000;
+  color: #fff;
+  border-top: 1px solid #fff;
+  margin-left: 13vw;
+}
+
+body footer .sm {
+  padding: 3vw 1vw;
+}
+
+body footer .sm .ftnav {
+  border-bottom: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2vw 3vw;
+}
+
+body footer .sm .ftnav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body footer .ftdown .imgkiwi {
+  background-color: #3a2310;
+  border-radius: 50%;
+  width: 10vw;
+}
+
+@media (max-width: 500px) {
+  body main {
+    margin-top: 5vw;
+    margin-left: 0;
+  }
+  body main .hobby .napis {
+    font-size: 16xp;
+    display: none;
+  }
+  body footer {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

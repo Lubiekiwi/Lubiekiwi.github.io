@@ -156,8 +156,12 @@
         }
     };
     
-    let state = 0;
-    window.onscroll = () => {
+    // button
+    let isShowed = false;
+    let toggler = document.querySelector(".button");
+    let menu = document.querySelector(".navi");
+    
+    function setResolution(){
 
         // jeśli przejedziesz pod header, wrzuć go na lewo
       if(window.scrollY > tHWidth && window.innerWidth > 500){
@@ -180,38 +184,35 @@
 
         // wersja mniej niż 500 width
       }else if(window.innerWidth < 500){
+        if(state !=2){
+          state = 2;
+          //ustawiamy rzeczy od renderu za pierwszym razem
+          document.querySelector(".navi").style.display = "none";
+          document.querySelector(".navi").style.position = "absolute";
+        }
         tH.className = "med";
         document.querySelector(".button").style.display = "flex";
         document.querySelector(".signature").style.display = "flex";
-        document.querySelector(".navi").style.display = "none";
         document.querySelector(".signature > h1").style.fontSize = "x-large";
         document.querySelector(".signature > h4").style.fontSize = "medium";
         document.querySelector(".sechead").style.padding = "2vw";
 			
-					// button
-				let isShowed = false;
-    		let toggler = document.querySelector(".button");
-    		let menu = document.querySelector(".navi");
+					// button cd
     		toggler.onclick = () => {
-        	console.log(isShowed)
         	if(isShowed){
             	menu.style.display = "none";
-							fade.out(menu);
         	}else{
             menu.style.display = "flex";
-						// fade.in(menu);
-
+						fade.in(menu);
         	};
         	isShowed = !isShowed;
-
-					fade.in(menu);
 
 					menu.style.flexDirection = "column";
 					menu.style.alignItems = "flex-start";
 					menu.style.height = "fit-content";
 
 					for(d of document.querySelectorAll(".navi div")){
-						d.style.backgroundColor = "rgb(66, 122, 105)";
+						// d.style.backgroundColor = "rgb(66, 122, 105)";
 						d.style.borderTop = "1px dashed rgb(51, 69, 63)";
 						d.style.width = "30vw";
 						d.style.textAlign = "left";
@@ -248,6 +249,12 @@
           }
         }
     };
+
+    let state = 0;
+    window.onscroll = () => {setResolution()};
+    setTimeout(()=>{
+      setResolution();
+    },100)
 
       // wrzucanie zdjęcia jako tło w sekcji z hobby
     let h = document.querySelector("#hobby");
@@ -286,9 +293,6 @@
       h.style.backgroundImage = "none";
       fade.out(h)
     };
-
-
-
   </script>
 </body>
 </html>

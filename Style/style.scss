@@ -59,7 +59,7 @@ body{
                 align-items: center;
                 justify-content: space-around;
                 padding:2vw 5vw;
-                height:5vw;
+                height:fit-content;
                 a{
                     color:inherit;
                     text-decoration:none;
@@ -78,7 +78,7 @@ body{
     };
     main{
         margin-left:13vw;
-        margin-top:21vw;
+        padding-top:21vw;
         .omnie{
             padding:3vw;
         }
@@ -90,11 +90,13 @@ body{
             border-top:1px solid #fff;
             // padding:3vw;
             height:50vw;
+            position:relative;
             #hobby{
-                width:87%;
-                height:50vw;
+                width:100%;
+                height:100%;
                 position:absolute;
                 z-index: 1;
+                background-size:cover;
             }
             .napis{
                 position:absolute;

@@ -110,6 +110,7 @@ body{
                 align-items: center;
                 margin:2vw;
                 z-index: 2;
+                // position: static;
                 img{
                     border-radius: 50%;
                     width:15vw;
@@ -122,13 +123,12 @@ body{
                 }
                 .opis{
                     display:none;
-                    z-index:3
-                }
-                // zrobić coś, żeby to działało xD
-                .img2:active >.opis{
-                    display:block;
-                    border-radius:10%;
+                    height:70%;
+                    width:70%;
                     background-color:rgb(51, 69, 63) ;
+                    align-items:center;
+                    justify-content: center;
+                    text-align: center;
                 }
             }
         }

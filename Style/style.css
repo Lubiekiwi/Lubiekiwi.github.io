@@ -93,9 +93,7 @@ body header .secnav .navi {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 2vw 5vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 5vw;
 }
 
 body header .secnav .navi a {
